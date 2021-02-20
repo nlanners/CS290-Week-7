@@ -6,19 +6,19 @@ app.set('port', 65535);
 
 app.get('/', function(req, res){
     res.type('text/plain');
-    res.send(Math.random());
+    res.send(toString(Math.random()));
 });
 
 app.use(function(req, res){
     res.type('text/plain');
-    res.sendStatus(404);
+    res.status(404);
     res.send('404 - Not Found');
 });
 
 app.use(function(err, req, res, next){
     console.error(err.stack);
     res.type('plain/text');
-    res.sendStatus(500);
+    res.status(500);
     res.send('500 - Server Error');
 });
 
