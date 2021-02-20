@@ -6,7 +6,7 @@ app.set('port', 65535);
 
 app.get('/', function(req, res){
     res.type('text/plain');
-    res.send(toString(Math.random()));
+    res.send('Random Number: ' + Math.random());
 });
 
 app.use(function(req, res){
