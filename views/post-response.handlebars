@@ -1,0 +1,37 @@
+<h1>POST Request Received</h1>
+
+<table>
+    <caption>Query Values</caption>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each qDataList}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+<table>
+    <caption>Body Values</caption>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each bDataList}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.value}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
