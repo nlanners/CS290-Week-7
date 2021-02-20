@@ -9,7 +9,7 @@ app.set('port', 65535);
 
 function randomNum(){
     var randNum = {};
-    randNum.number = Math.random() * 10;
+    randNum.number = Math.floor(Math.random() * 100);
     return randNum
 }
 
