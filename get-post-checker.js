@@ -30,7 +30,7 @@ app.post('/', function(req,res){
     var bodyParams = [];
     var jsonData = JSON.parse(req.body.jsonData);
     for (var b in jsonData){
-        bodyParams.push({'name': b, 'value':req.jsonData[b]});
+        bodyParams.push({'name': b, 'value':jsonData[b]});
     }
 
     var context = {};
